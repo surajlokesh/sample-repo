@@ -20,14 +20,14 @@ from django.urls import path,include
 from home.views import home_view,deletestudent,edit,CreateStudent,home_view1
 
 urlpatterns = [
-    path('',views.h)
+    # path('',views.h)
 
 
-    # path('',home_view),
-    # path('admin/', admin.site.urls),
-    # path('delete-student/<id>',deletestudent),
-    # path('edit/<id>',edit),
-    # path('create-student/',CreateStudent),
-    # path('testpage/',home_view1)
+    path('',home_view),
+    path('admin/', admin.site.urls),
+    path('delete-student/<id>',deletestudent),
+    path('edit/<id>',edit),
+    path('create-student/',CreateStudent),
+    path('testpage/',home_view1)
     
 ]
