@@ -17,27 +17,27 @@ from home.models import Teacher
 # admin.site.register(book)
 # admin.site.register(Teacher)
 
-@admin.register(book)
-class bookAdmin(admin.ModelAdmin):
-    search_fields=('book',)
-    #pass
+# @admin.register(book)
+# class bookAdmin(admin.ModelAdmin):
+#     search_fields=('book',)
+#     #pass
 
-@admin.register(Student)
-class StudentAdmin(admin.ModelAdmin):
-    search_fields=('student_name','timestamp')
-    list_filter=('student_name','department')
-    fields=('student_name','department')
+# @admin.register(Student)
+# class StudentAdmin(admin.ModelAdmin):
+#     search_fields=('student_name','timestamp')
+#     list_filter=('student_name','department')
+#     fields=('student_name','department')
 
-@admin.register(section)
-class sectionAdmin(admin.ModelAdmin):
-    pass
+# @admin.register(section)
+# class sectionAdmin(admin.ModelAdmin):
+#     pass
 
-@admin.register(Teacher)
-class TeacherAdmin(admin.ModelAdmin):
-    pass
+# @admin.register(Teacher)
+# class TeacherAdmin(admin.ModelAdmin):
+#     pass
     
-@admin.register(Library)
-class LibraryAdmin(admin.ModelAdmin):
-    search_fields=('Library_name','books')
-    #pass
+# @admin.register(Library)
+# class LibraryAdmin(admin.ModelAdmin):
+#     search_fields=('Library_name','books')
+#     #pass
 
