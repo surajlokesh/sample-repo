@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>just practice</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    </head>
+    <body>
+
+        {% block content %}
+        {% endblock %}
+
+        {% block userdefine %}
+        {% endblock %}
+        <p>This is a sample html page.</p>
+        {% comment %} <img src="{% static 'image/SAVE_20190625_221341.jpg'%}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""> {% endcomment %}
+
+        <script src="{% static 'js/slim.min.js' %}" </script>
+        <script src="{% static 'js/ajaxpopper.min.js' %}" </script>
+        <script src="{% static 'js/bootstrap.min.js' %}" </script>
+
+    </body>
+</html>
